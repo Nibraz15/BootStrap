@@ -43,7 +43,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm-3 align-self-center">
+                    <img src="img/logo.png" class="image-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                        <a class="btn btn-warning" href="#reserve" role="button">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -59,8 +63,9 @@
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthapizza">
                     <div class="media-body">
                         <h2>Uthappizza <span class="badge badge-danger">HOT</span> <badge class="badge badge-pill badge-secondary">$4.99</badge></h2>
-                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-            
+                        <div class="d-none d-sm-block">
+                            <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,11 +78,14 @@
             </div>
             <div class="col col-sm col-md">
                 <div class=" media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+                    
                     <div class="media-body">
-                        <h2>Weekend Grand Buffet</h2>
-                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        <h2>Weekend Grand Buffet <badge class="badge badge-danger">NEW</badge></h2>
+                        <div class="d-none d-sm-block">
+                            <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        </div>
                     </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
                 </div>
                 
             </div>
@@ -93,10 +101,79 @@
                     <div class="media-body">
                         <h2>Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
-                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        <div class="d-none d-sm-block">
+                            <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        </div>
                     </div>
                 </div>
                 
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="card" id="reserve">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group-row">
+                               
+                                
+                                <label class="col-12 col-md-2 col-form-label form-check-inline">Number of Guests</label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio"> 1
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio"> 2
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio"> 3
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio"> 4
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio"> 5
+                                    </label>
+                                </div>
+                                <div class="form-check-inline ">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio"> 6
+                                    </label>
+                                </div>
+                                <h2>  </h2>       
+                            </div>
+                            <div class="form-group-row">
+                                <label class="col-12 col-md-2 col-form-label form-check-inline">Date and Time</label>
+                                <div class="col-12 col-md-3 form-check-inline">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>
+                                <div class="col-12 col-md-3 form-check-inline">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                </div>
+                                <h2>  </h2>
+                            </div>
+                            <div class="form-group-row">
+                                <h2>  </h2>
+                            </div>
+                            <div class="form-group-row">
+                                <div class="col-12 offset-md-2  col-md-10">
+                                    <button type="submit" class="btn btn-primary">
+                                        Reserve
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
